@@ -1,0 +1,18 @@
+SystemHardening \
+     Minimize host OS footprint Reduce Attack Surface \
+Common System Hardening \
+Kubernertes cluster \
+ > update hosts regularly  \
+ > Remove unwanted utils \
+ > Limit access with firewall rules \
+ > log all system activities   \
+Reduce host OS attack status \
+ > create pod to use host namespace only if necessary \
+ > Donot run containers in priviliged mode(priviliged = false, non-root user) \
+ > Limit node access to users \
+ > Remove unnecessary binaries and services \
+ > control access using SSH, disable root and password-based logins \
+ > Adding correct firewall rules to restrict host access on opened ports \
+ > Preventing containers from loading unwanted kernel modules \
+ > Identify and address open ports \
+ > Restrict allowed host path using PodSecurityPolicies \
