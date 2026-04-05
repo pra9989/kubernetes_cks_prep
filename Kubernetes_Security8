@@ -16,3 +16,26 @@ Reduce host OS attack status \
  > Preventing containers from loading unwanted kernel modules \
  > Identify and address open ports \
  > Restrict allowed host path using PodSecurityPolicies \
+USE HOST NAMESPACE ONLY IF NECESSARY \
+Pod level 
+  Dont use hostIPC: true unless if necessary \
+  Dont Use hostNetwork: true unless if necessary \
+  Dont use hostPID: true unless if necessary \
+Limit Node Access to users \
+REMOVE OBSOLETE/UNNECESSARY SOFTWARE \
+list all the services \
+stop services \
+disable services \
+uninstall apt remove squid \
+SSH HARDENING \
+ view auth key (cat /home/mark/.ssh/authorized_keys \
+ harden ssh config /etc/ssh/sshd_config \
+ PermitRootLogin no \
+ PasswordAuthentication no \
+disable services \
+systemctl restart sshd \
+Identify & fix open ports \
+preventing from loading unwanted kernel modules \
+create /etc/modeprobe.d/kubernetes-blacklist.conf \
+Restrict AllowedHostpath using PSP \
+podsecuritypolicy \
