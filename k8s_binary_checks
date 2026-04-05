@@ -1,0 +1,12 @@
+ Verify platform binaries before deploying 
+1) Verify the kubernetes binaries using the checksum \
+kubernetes binaries \
+   > generate sha512 checksum \
+   > compare/validate with offical release checksum \
+kubernetes release page for the specific release
+Go to the master node 
+Download the binary from the kubernetes release page of changelog to the master node
+sha512sum kubernetes-client-darwin-arm64.tar.gz 
+
+
+
